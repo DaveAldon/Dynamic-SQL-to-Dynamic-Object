@@ -33,9 +33,6 @@ ClassMethod Build(pQuery, pNamespace As %String = "", pMode As %String = 0, pDia
 		set tStatement = ##class(%SQL.Statement).%New(pMode)
 		// Set the dialect of the statement
 		set tStatus = tStatement.%DialectSet(pDialect)
-		// Set the size of our array that will hold the statements
-		set query = 1
-		set query(1) = pQuery
 		set qStatus = tStatement.%Prepare(pQuery)
 		if qStatus '= 1 {
 			write "%Prepare failed:" do $System.Status.DisplayError(qStatus) quit
