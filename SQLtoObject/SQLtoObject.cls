@@ -10,8 +10,8 @@ Class SQLtoObject.SQLtoObject Extends %Persistent
 /// <p><ul>
 /// <li><b>Query</b>: The query string that will be run</li>
 /// <li><b>Namespace (Default Value = "")</b>: Optional string that will run the query on a different namespace if defined</li>
-/// <li><b>Mode (Default Value = "2")</b>: Optional integer to determine which mode the query will be run on</li>
-/// <li><b>Dialect (Default Value = "CACHE")</b>: Optional string to determine which dialect the query will use</li>
+/// <li><b>Mode (Default Value = "0")</b>: Optional integer to determine which mode the query will be run on</li>
+/// <li><b>Dialect (Default Value = "IRIS")</b>: Optional string to determine which dialect the query will use</li>
 /// </ul></p>
 /// <h2>Example</h2>
 /// <pre>
