@@ -27,9 +27,8 @@ ClassMethod Build(pQuery, pNamespace As %String = "", pMode As %String = 0, pDia
 	try {
 		// Keep track of the original namespace
 		set oldNamespace = $namespace
-		if pNamespace '= "" {
-			set $namespace = pNamespace
-		}
+		if pNamespace '= "" set $namespace = pNamespace
+		
 		// Instantiate the dynamic sql object with the given display mode
 		set tStatement = ##class(%SQL.Statement).%New(pMode)
 		// Set the dialect of the statement
