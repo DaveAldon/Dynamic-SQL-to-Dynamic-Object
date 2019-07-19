@@ -25,11 +25,11 @@ Mode values are as follows:
 ## Dialect
 
 For more information on these different dialect options, see [this article](https://irisdocs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=GSQL_dynsql#GSQL_dynsql_dialect).
-Sybase
-MSSQL
-MSSQLSERVER
-IRIS
-CACHE (If using older versions)
+* **Sybase**
+* **MSSQL**
+* **MSSQLSERVER**
+* **IRIS**
+* **CACHE** (If using older versions)
 
 ### Example
 ```sh
