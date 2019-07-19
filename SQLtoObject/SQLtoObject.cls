@@ -22,7 +22,7 @@ Class SQLtoObject.SQLtoObject Extends %Persistent
 /// </pre>
 /// <p>SQL errors will be written out immediately, and logic errors will be returned in the return object
 /// </html>
-ClassMethod Build(pQuery, pNamespace As %String = "", pMode As %String = 2, pDialect As %String = "CACHE") As %Status
+ClassMethod Build(pQuery, pNamespace As %String = "", pMode As %String = 0, pDialect As %String = "IRIS") As %Status
 {
 	try {
 		// Keep track of the original namespace

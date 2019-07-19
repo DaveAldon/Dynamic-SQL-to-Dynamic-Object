@@ -12,8 +12,8 @@ This function aims to be a one-stop shop for your sql needs, and is especially u
 
 * **Query (Required String)**: The query string that will be run
 * **Namespace (Optional String)**: Default Value = "" - Runs the query on the defined namespace
-* **Mode (Optional String)**: Default Value = "2" - Determines which mode the query will be run on
-* **Dialect (Optional String)**: Default Value = "CACHE" - Determines which dialect the query will use
+* **Mode (Optional String)**: Default Value = "0" - Determines which mode the query will be run on
+* **Dialect (Optional String)**: Default Value = "IRIS" - Determines which dialect the query will use
 
 ## Mode
 
