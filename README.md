@@ -1,6 +1,6 @@
 # Dynamic SQL to Dynamic Object
 
-[![Gitter](https://img.shields.io/badge/Available%20on-Intersystems%20Open%20Exchange-00b2a9.svg)](https://community.intersystems.com)
+[![Gitter](https://img.shields.io/badge/Available%20on-Intersystems%20Open%20Exchange-00b2a9.svg)](https://openexchange.intersystems.com/package/Dynamic-SQL-to-Dynamic-Object)
 
 ## Overview
 
