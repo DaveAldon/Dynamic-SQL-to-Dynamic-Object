@@ -7,6 +7,7 @@
 This is an ObjectScript function to convert any sql query into a dynamic object. This returned object will have a key/value pair based on the fieldname and value from the query's result set. The function also has helpful optional parameters to let you switch namespaces on a per-query basis, and change the mode and dialect.
 
 ## Prerequisites
+
 Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Docker desktop](https://www.docker.com/products/docker-desktop) installed.
 
 ## Installation 
@@ -41,6 +42,7 @@ IRISAPP>write ##class(SQLtoObject.SQLtoObject).Build("SELECT AircraftCategory FR
 ```
 
 ## How to start coding
+
 This repository is ready to code in VSCode with ObjectScript plugin.
 Install [VSCode](https://code.visualstudio.com/), [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) and [ObjectScript](https://marketplace.visualstudio.com/items?itemName=daimor.vscode-objectscript) plugins and open the folder in VSCode.
 
@@ -55,7 +57,7 @@ Creating objectscript-contest-template_iris_1 ... done
 Click on the ObjectScript status bar and select Refresh connection in the menu.
 Wait for VSCode to make connection and show something like "localhost:32778[IRISAPP] - Connected"
 
-You can start coding after that. Open **ObjectScript.cls** in VSCode, make changes and save - the class will be compiled by IRIS on 'Save'.
+You can start coding after that. Open **SQLtoObject.cls** in VSCode, make changes and save - the class will be compiled by IRIS on 'Save'.
 
 ## Features
 
@@ -95,6 +97,7 @@ IRISAPP> write ##class(SQLtoObject.SQLtoObject).Build("SELECT AircraftCategory F
 SQL errors will be written out immediately, and logic errors will be returned in the return object
 
 ## Version history
-2019-07-18 - v1.0 - Initial commit of function with features outlined in description
 
 2020-03-22 - v1.1 - Compatibility with the InterSystems Online Programming Contest 2020
+
+2019-07-18 - v1.0 - Initial commit of function with features outlined in description
