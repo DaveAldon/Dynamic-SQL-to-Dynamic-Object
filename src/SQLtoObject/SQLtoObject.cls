@@ -46,12 +46,12 @@ ClassMethod Build(pQuery, pNamespace As %String = "", pMode As %String = 2, pDia
 		
 		// Metadata handling, gets column name information and counts
 		set tMetadata = rSet.%GetMetadata()
-    	set tColumnCount = tMetadata.columns.Count()
-    	for x=1:1:tColumnCount {
-	        set tColumn = tMetadata.columns.GetAt(x)
-	        set tColumnName = tColumn.colName
-	        set tColumns = tColumns _ $lb(tColumnName)
-	    }
+    		set tColumnCount = tMetadata.columns.Count()
+    		for x=1:1:tColumnCount {
+			set tColumn = tMetadata.columns.GetAt(x)
+			set tColumnName = tColumn.colName
+			set tColumns = tColumns _ $lb(tColumnName)
+	    	}
 
 		// loop through the result set returned by the query
 		while rSet.%Next() {
