@@ -96,4 +96,5 @@ SQL errors will be written out immediately, and logic errors will be returned in
 
 ## Version history
 2019-07-18 - v1.0 - Initial commit of function with features outlined in description
+
 2020-03-22 - v1.1 - Compatibility with the InterSystems Online Programming Contest 2020
