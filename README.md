@@ -32,12 +32,16 @@ $ docker-compose up -d
 
 ## How to Run the Application
 
+For a quick SQL demo, below includes instructions on installing the samples data and then using the application on it.
+
 Open InterSystems IRIS terminal:
 
 ```
 $ docker-compose exec iris iris session iris
-USER>zn "IRISAPP"
-IRISAPP>write ##class(SQLtoObject.SQLtoObject).Build("SELECT AircraftCategory FROM Aviation.Aircraft","SAMPLES").%ToJSON()
+IRISAPP>zpm
+zpm: IRISAPP>install samples-aviation
+
+IRISAPP>write ##class(SQLtoObject.SQLtoObject).Build("SELECT AircraftCategory FROM Aviation.Aircraft","IRISAPP").%ToJSON()
 [{"AircraftCategory":"Airplane"},{"AircraftCategory":"Airplane"},{"AircraftCategory":"Airplane"}... etc.
 ```
 
@@ -85,6 +89,15 @@ For more information on these different dialect options, see [this article](http
 * **CACHE** (If using older versions)
 
 ## Example Usage
+
+This code assumes installation of the samples package like so:
+
+```
+$ docker-compose exec iris iris session iris
+IRISAPP>zpm
+zpm: IRISAPP>install samples-aviation
+```
+Then run the following:
 
 ```sh
 IRISAPP> write ##class(SQLtoObject.SQLtoObject).Build("SELECT AircraftCategory FROM Aviation.Aircraft","SAMPLES")
